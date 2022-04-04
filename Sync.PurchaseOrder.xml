@@ -37,9 +37,9 @@
 					<NameValue name="TotalLines" type="integer">1</NameValue>
 					<NameValue name="TotalQuantity" type="decimal">1</NameValue>
 					<NameValue name="CreatedbyCode" type="string">KE01</NameValue>
-					<NameValue name="CreatedbyName" type="string">Kira England</NameValue>
+					<NameValue name="CreatedbyName" type="string">Ingrid England</NameValue>
 					<NameValue name="CreatedbyPhone" type="string">5165958883</NameValue>
-					<NameValue name="CreatedbyEmail" type="string">Kira.England@nsacom.com</NameValue>
+					<NameValue name="CreatedbyEmail" type="string">Ingrid.England@ncomsa.com</NameValue>
 					<NameValue name="SendDateTime" type="string">2022-04-01T20:43:52Z</NameValue>
 				</Reference>
 				<LastModificationDateTime>2022-04-01T20:43:00Z</LastModificationDateTime>
@@ -58,7 +58,7 @@
 					</Location>
 					<BuyerContact>
 						<ID accountingEntity="1000">KE01</ID>
-						<Name languageID="en-US">Kira England</Name>
+						<Name languageID="en-US">Ingrid England</Name>
 					</BuyerContact>
 				</CustomerParty>
 				<SupplierParty category="">
