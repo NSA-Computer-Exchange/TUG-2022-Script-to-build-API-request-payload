@@ -1,0 +1,694 @@
+<?xml version="1.0" ?>
+<SyncPurchaseOrder languageCode="en-US" releaseID="9.2" systemEnvironmentCode="Production" versionID="2.12.2" xmlns="http://schema.infor.com/InforOAGIS/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ApplicationArea>
+		<Sender>
+			<LogicalID>lid://infor.sx.sx</LogicalID>
+		</Sender>
+		<CreationDateTime>2022-04-01T20:43:52Z</CreationDateTime>
+		<BODID>infor-nid:NSACOM_DEM:1000::360-00:1?PurchaseOrder&amp;verb=Sync</BODID>
+	</ApplicationArea>
+	<DataArea>
+		<Sync>
+			<TenantID>NSACOM_DEM</TenantID>
+			<AccountingEntityID>1000</AccountingEntityID>
+			<ActionCriteria>
+				<ActionExpression actionCode="Replace">
+				</ActionExpression>
+			</ActionCriteria>
+		</Sync>
+		<PurchaseOrder>
+			<PurchaseOrderHeader>
+				<DocumentID agencyRole="Customer">
+					<ID accountingEntity="1000" location="10" variationID="65050">360-00</ID>
+					<RevisionID>0</RevisionID>
+					<VariationID>65050</VariationID>
+				</DocumentID>
+				<DocumentReference>
+					<Facility>
+						<IDs>
+							<ID schemeName="Supplier">
+							</ID>
+						</IDs>
+					</Facility>
+				</DocumentReference>
+				<Reference>
+					<NameValue name="EDI850OuT" type="string">no</NameValue>
+					<NameValue name="Schedule/Shipping" type="string">BO Partial</NameValue>
+					<NameValue name="TotalLines" type="integer">1</NameValue>
+					<NameValue name="TotalQuantity" type="decimal">1</NameValue>
+					<NameValue name="CreatedbyCode" type="string">KE01</NameValue>
+					<NameValue name="CreatedbyName" type="string">Kira England</NameValue>
+					<NameValue name="CreatedbyPhone" type="string">5165958883</NameValue>
+					<NameValue name="CreatedbyEmail" type="string">Kira.England@nsacom.com</NameValue>
+					<NameValue name="SendDateTime" type="string">2022-04-01T20:43:52Z</NameValue>
+				</Reference>
+				<LastModificationDateTime>2022-04-01T20:43:00Z</LastModificationDateTime>
+				<DocumentDateTime>2022-04-01</DocumentDateTime>
+				<Description languageID="en-US">Stock Order</Description>
+				<Status>
+					<Code>Open</Code>
+					<Description languageID="en-US">1</Description>
+					<EffectiveDateTime>2022-04-01</EffectiveDateTime>
+					<ReasonCode>N/A</ReasonCode>
+				</Status>
+				<CustomerParty>
+					<Location type="Warehouse">
+						<ID accountingEntity="1000">10</ID>
+						<Name languageID="en-US">NSA - Colorado Warehouse</Name>
+					</Location>
+					<BuyerContact>
+						<ID accountingEntity="1000">KE01</ID>
+						<Name languageID="en-US">Kira England</Name>
+					</BuyerContact>
+				</CustomerParty>
+				<SupplierParty category="">
+					<PartyIDs>
+						<ID accountingEntity="1000">13040</ID>
+					</PartyIDs>
+					<Communication>
+						<ChannelCode>Phone</ChannelCode>
+						<UseCode>Office</UseCode>
+						<DialNumber>6313480200        </DialNumber>
+					</Communication>
+					<Name languageID="en-US">MOTORS AND ARMATURES</Name>
+					<Location>
+						<Address type="Text">
+							<AddressLine languageID="en-US" sequence="1">250 Rabro Dr East</AddressLine>
+							<CityName>Hauppauge</CityName>
+							<CountrySubDivisionCode>NY</CountrySubDivisionCode>
+							<CountryCode>US</CountryCode>
+							<PostalCode>11788</PostalCode>
+						</Address>
+					</Location>
+				</SupplierParty>
+				<ShipToParty category="">
+					<PartyIDs>
+						<ID accountingEntity="1000">10</ID>
+					</PartyIDs>
+					<Name languageID="en-US">NSA - Colorado Warehouse</Name>
+					<Location>
+						<ID accountingEntity="1000">10</ID>
+						<Name languageID="en-US">NSA - Colorado Warehouse</Name>
+						<Address type="Text">
+							<AddressLine languageID="en-US" sequence="1">5225 N ACADEMY BLVD STE 101</AddressLine>
+							<CityName>COLORADO SPRINGS</CityName>
+							<CountrySubDivisionCode>CO</CountrySubDivisionCode>
+							<CountryCode>US</CountryCode>
+							<PostalCode>80918-4000</PostalCode>
+						</Address>
+					</Location>
+				</ShipToParty>
+				<ShipFromParty>
+					<PartyIDs>
+						<ID accountingEntity="1000">13040</ID>
+					</PartyIDs>
+					<Name languageID="en-US">MOTORS AND ARMATURES</Name>
+					<Location>
+						<Address type="Text">
+							<AddressLine languageID="en-US" sequence="1">250 Rabro Dr East</AddressLine>
+							<CityName>Hauppauge</CityName>
+							<CountrySubDivisionCode>NY</CountrySubDivisionCode>
+							<CountryCode>US</CountryCode>
+							<PostalCode>11788</PostalCode>
+						</Address>
+					</Location>
+					<Communication>
+						<ChannelCode>Phone</ChannelCode>
+						<UseCode>Office</UseCode>
+						<DialNumber>6313480200        </DialNumber>
+					</Communication>
+				</ShipFromParty>
+				<BillToParty>
+					<PartyIDs>
+						<ID accountingEntity="1000">10</ID>
+						<TaxID>123-45-6789</TaxID>
+					</PartyIDs>
+					<Name languageID="en-US">NSA - Colorado Warehouse</Name>
+					<Location>
+						<Address type="Text">
+							<AddressLine languageID="en-US" sequence="1">5225 N ACADEMY BLVD STE 101</AddressLine>
+							<CityName>COLORADO SPRINGS</CityName>
+							<CountrySubDivisionCode>CO</CountrySubDivisionCode>
+							<CountryCode>US</CountryCode>
+							<PostalCode>80918-4000</PostalCode>
+						</Address>
+					</Location>
+					<Communication>
+						<ChannelCode>Phone</ChannelCode>
+						<UseCode>Office</UseCode>
+						<DialNumber>5162406020        </DialNumber>
+					</Communication>
+				</BillToParty>
+				<ExtendedAmount currencyID="USD">85.00</ExtendedAmount>
+				<ExtendedBaseAmount currencyID="USD">85.00</ExtendedBaseAmount>
+				<ExtendedReportAmount currencyID="USD">85.00</ExtendedReportAmount>
+				<TotalAmount currencyID="USD">85.00</TotalAmount>
+				<TotalBaseAmount currencyID="USD">85.00</TotalBaseAmount>
+				<TotalReportAmount currencyID="USD">85.00</TotalReportAmount>
+				<DropShipmentAllowedIndicator>false</DropShipmentAllowedIndicator>
+				<EarlyShipmentAllowedIndicator>true</EarlyShipmentAllowedIndicator>
+				<RequestedShipDateTime>2022-04-01</RequestedShipDateTime>
+				<EarliestShipDateTime>2022-04-01</EarliestShipDateTime>
+				<PromisedDeliveryDateTime>2022-04-01</PromisedDeliveryDateTime>
+				<OrderDateTime>2022-04-01</OrderDateTime>
+				<UserArea>
+					<Property>
+						<NameValue name="Division" type="SX">10</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="DueDays" type="SX">30</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.actionty" type="string">B</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addoncapfl1" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addoncapfl2" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addoncapfl3" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addoncapfl4" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addontype1" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addontype2" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addontype3" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addontype4" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.addressoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.apholdfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.approvty" type="string">y</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.billtowhse" type="string">10</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.bofl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.borelfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.closedapbatchfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.confirmfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.cono" type="integer">1000</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.createdby" type="string">KE01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.divno" type="integer">10</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.duedt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.duedttz" type="datetime-tz">04/01/2022 16:43:52.143-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.dueoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.enterdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.enterdttz" type="datetime-tz">04/01/2022 16:43:52.143-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.esbedipofl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.esbpurchaseorderfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.esbquotefl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.esbreceivedeliveryfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.esbshipmentfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.expoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.expshipdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.expshipdttz" type="datetime-tz">04/01/2022 16:43:52.143-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.fobfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.freightexpectedty" type="string">N</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.glupdfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.ignoreltfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.invexrate" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.linefl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.nextlineno" type="integer">2</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.nolineitem" type="integer">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.notimeschg" type="integer">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.orderdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.orderdttz" type="datetime-tz">04/01/2022 16:43:52.143-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.orgtotlineamt" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.outofcityfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.pono" type="integer">360</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.printfl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.printprfl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.rcvexrate" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.repricefl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.reqoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.reqshipdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.reqshipdttz" type="datetime-tz">04/01/2022 16:43:52.143-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.resalefl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.rushfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.shiptoaddr1" type="string">5225 N ACADEMY BLVD STE 101</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.shiptocity" type="string">COLORADO SPRINGS</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.shiptonm" type="string">NSA - Colorado Warehouse</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.shiptost" type="string">CO</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.shiptozip" type="string">80918-4000</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.stagecd" type="integer">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.subfl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.termstype" type="string">N30</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.totcubes" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.totlineamt" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.totqtyord" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.totqtyrcv" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.totqtyrcvb" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.totrcvamt" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.transtype" type="string">po</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.trhistfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.vendno" type="decimal">13040</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.whse" type="string">10</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poeh.wodisctype" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="SXe_apsv_user5" type="SX">pass1     </NameValue>
+					</Property>
+					<Property>
+						<NameValue name="SxeTermsCode" type="SX">n30</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="TermsDescription" type="SX">Net 30</NameValue>
+					</Property>
+				</UserArea>
+				<BaseCurrencyAmount type="ExtendedAmount">
+					<Amount currencyID="USD">85.00</Amount>
+				</BaseCurrencyAmount>
+				<BaseCurrencyAmount type="TotalAmount">
+					<Amount currencyID="USD">85.00</Amount>
+				</BaseCurrencyAmount>
+				<BuyerReference>
+					<IDs>
+						<ID accountingEntity="1000">KE01</ID>
+					</IDs>
+					<Name languageID="en-US">Kira England</Name>
+					<Communication>
+						<ChannelCode>Phone</ChannelCode>
+						<UseCode>Office</UseCode>
+						<DialNumber>5165958883</DialNumber>
+						<ChannelCode>eMail</ChannelCode>
+						<UseCode>Office</UseCode>
+						<URI>Kira.England@nsacom.com</URI>
+					</Communication>
+				</BuyerReference>
+				<RemitToParty category="">
+					<PartyIDs>
+						<ID accountingEntity="1000">13040</ID>
+					</PartyIDs>
+					<Name languageID="en-US">
+					</Name>
+					<Location>
+						<Address type="Text">
+							<CountryCode>US</CountryCode>
+						</Address>
+					</Location>
+				</RemitToParty>
+			</PurchaseOrderHeader>
+			<PurchaseOrderLine>
+				<LineNumber>1</LineNumber>
+				<Status>
+					<Code>Open</Code>
+					<Description languageID="en-US">N/A</Description>
+					<EffectiveDateTime>2022-04-01</EffectiveDateTime>
+					<ReasonCode>N/A</ReasonCode>
+				</Status>
+				<Reference>
+					<NameValue name="BinLocation1" type="string">Ne/w /Par/t  </NameValue>
+				</Reference>
+				<Item>
+					<ItemID>
+						<ID accountingEntity="1000">MOTOR</ID>
+					</ItemID>
+					<CustomerItemID>
+						<ID accountingEntity="1000">MOTOR</ID>
+					</CustomerItemID>
+					<ServiceIndicator>false</ServiceIndicator>
+					<Description languageID="en-US">50CC Go-Kart Motor</Description>
+					<Packaging>
+						<PerPackageQuantity unitCode="EA">1.00000</PerPackageQuantity>
+					</Packaging>
+				</Item>
+				<Classification/>
+				<Quantity unitCode="EA">1.00</Quantity>
+				<BaseUOMQuantity unitCode="EA">1.00</BaseUOMQuantity>
+				<UnitPrice>
+					<Amount currencyID="USD">85.00000</Amount>
+					<BaseAmount currencyID="USD">85.00000</BaseAmount>
+					<ReportAmount currencyID="USD">85.00000</ReportAmount>
+					<PerQuantity unitCode="EA">1.00000</PerQuantity>
+				</UnitPrice>
+				<ExtendedAmount currencyID="USD">85.00</ExtendedAmount>
+				<ExtendedBaseAmount currencyID="USD">85.00</ExtendedBaseAmount>
+				<ExtendedReportAmount currencyID="USD">85.00</ExtendedReportAmount>
+				<TotalAmount currencyID="USD">85.00</TotalAmount>
+				<TotalBaseAmount currencyID="USD">85.00</TotalBaseAmount>
+				<TotalReportAmount currencyID="USD">85.00</TotalReportAmount>
+				<RequiredDeliveryDateTime>2022-04-01</RequiredDeliveryDateTime>
+				<PromisedDeliveryDateTime>2022-04-01</PromisedDeliveryDateTime>
+				<ShipToParty category="">
+					<PartyIDs>
+						<ID accountingEntity="1000">10</ID>
+					</PartyIDs>
+					<Name languageID="en-US">NSA - Colorado Warehouse</Name>
+					<Location>
+						<ID accountingEntity="1000">10</ID>
+						<Name languageID="en-US">NSA - Colorado Warehouse</Name>
+						<Address type="Text">
+							<AddressLine languageID="en-US" sequence="1">5225 N ACADEMY BLVD STE 101</AddressLine>
+							<CityName>COLORADO SPRINGS</CityName>
+							<CountrySubDivisionCode>CO</CountrySubDivisionCode>
+							<CountryCode>US</CountryCode>
+							<PostalCode>80918-4000</PostalCode>
+						</Address>
+					</Location>
+				</ShipToParty>
+				<ReceivedQuantity unitCode="EA">0.00</ReceivedQuantity>
+				<ReceivedBaseUOMQuantity unitCode="EA">0.00</ReceivedBaseUOMQuantity>
+				<OpenQuantity unitCode="EA">1.00</OpenQuantity>
+				<OpenBaseUOMQuantity unitCode="EA">1.00</OpenBaseUOMQuantity>
+				<UserArea>
+					<Property>
+						<NameValue name="BaseLineUnitPrice" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="LineUnitPrice" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="OrderedQuantity" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.botype" type="string">y</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.catchweightfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.catwtfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.commentfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.cono" type="integer">1000</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.costeachfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.costoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.cubes" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.duedt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.duedttz" type="datetime-tz">04/01/2022 16:43:52.054-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.eachfl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.enterdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.enterdttz" type="datetime-tz">04/01/2022 16:43:52.054-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.exlatefl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.expshipdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.expshipdttz" type="datetime-tz">04/01/2022 16:43:52.054-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.icspecrecno" type="integer">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.ignoreltfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.invcost" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.leadoverty" type="string">n</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.lineno" type="integer">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.netamt" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.netrcv" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.origcubes" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.pono" type="integer">360</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.price" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.priceoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.printfl" type="logical">true</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.prodcat" type="string">Misc</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.qtyord" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.qtyrcv" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.rcvcost" type="decimal">85</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.recvaddfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.reqshipdt" type="date">2022-04-01</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.reqshipdttz" type="datetime-tz">04/01/2022 16:43:52.054-04:00</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.shipprod" type="string">MOTOR</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.srcrestrictovrfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.statustype" type="string">a</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.stkqtyord" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.stkqtyoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.stkqtyrcv" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.tallyfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.taxgroup" type="integer">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.taxoverideau" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.transtype" type="string">po</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.unit" type="string">EA</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.unitchgfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.unitconv" type="decimal">1</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.unitoverfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.usetrackfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.vafakeprodfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.vendno" type="decimal">13040</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.warrantyfl" type="logical">false</NameValue>
+					</Property>
+					<Property>
+						<NameValue name="poel.whse" type="string">10</NameValue>
+					</Property>
+				</UserArea>
+				<ExpensableItemIndicator>false</ExpensableItemIndicator>
+				<SupplierParty category="">
+					<PartyIDs>
+						<ID accountingEntity="1000">13040</ID>
+					</PartyIDs>
+					<Communication>
+						<ChannelCode>Phone</ChannelCode>
+						<UseCode>Office</UseCode>
+						<DialNumber>6313480200        </DialNumber>
+					</Communication>
+					<Name languageID="en-US">MOTORS AND ARMATURES</Name>
+					<Location>
+						<Address type="Text">
+							<AddressLine languageID="en-US" sequence="1">250 Rabro Dr East</AddressLine>
+							<CityName>Hauppauge</CityName>
+							<CountrySubDivisionCode>NY</CountrySubDivisionCode>
+							<CountryCode>US</CountryCode>
+							<PostalCode>11788</PostalCode>
+						</Address>
+					</Location>
+				</SupplierParty>
+				<BaseCurrencyAmount type="ExtendedAmount">
+					<Amount currencyID="USD">85.00</Amount>
+				</BaseCurrencyAmount>
+				<BaseCurrencyAmount type="TotalAmount">
+					<Amount currencyID="USD">85.00</Amount>
+				</BaseCurrencyAmount>
+			</PurchaseOrderLine>
+		</PurchaseOrder>
+	</DataArea>
+</SyncPurchaseOrder>
