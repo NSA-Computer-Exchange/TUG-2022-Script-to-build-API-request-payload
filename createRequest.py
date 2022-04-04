@@ -28,7 +28,7 @@ class DataInput:
 ''' IDM entity or Document Type '''
 entity = "Invoice"
 ''' Attribute or Property '''
-keyattr = "Order_Number"
+keyattr = "Purchase_Order_Number"
 ''' Operator like = > < etc. '''
 operator = "="
 ''' Set boolean value'''
