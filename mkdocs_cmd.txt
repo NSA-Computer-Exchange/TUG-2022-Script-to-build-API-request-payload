@@ -1,0 +1,8 @@
+# Create a new project:
+mkdocs new .
+
+# Run project
+mkdocs serve
+
+# Upload to GitHub
+mkdocs gh-deploy

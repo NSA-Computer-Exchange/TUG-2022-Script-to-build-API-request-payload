@@ -1,0 +1,13 @@
+site_name: Create IDM API Request 
+site_url: https://github.com/NSA-Computer-Exchange/TUG-2022-Script-to-build-API-request-payload
+
+nav: 
+  - Main: index.md
+  - ION Script: ionscript.md
+  - What's next: whatsnext.md
+
+theme:
+  name: material
+  logo: 'img/nsalogo.jpg'
+
+repo_url: https://github.com/NSA-Computer-Exchange/TUG-2022-Script-to-build-API-request-payload/tree/main
