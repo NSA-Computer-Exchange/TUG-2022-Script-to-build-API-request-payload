@@ -28,7 +28,7 @@ class DataInput:
 ''' IDM entity or Document Type '''
 entity = "Invoice"
 ''' Attribute or Property '''
-keyattr = "Order_Number"
+keyattr = "Purchase_Order_Number"
 ''' Operator like = > < etc. '''
 operator = "="
 ''' Set boolean value'''
@@ -36,6 +36,8 @@ textSearch = False
 ''' Set Purchase Order Number '''
 inputdata = DataInput()
 keyvalue = inputdata.getPO()
+''' Set logicalType '''
+logicalType = ""
 
 
 class Query(object):
@@ -64,7 +66,7 @@ class ArgumentsArg(object):
         self.argument = argument               
 
 
-argKeys = ArgumentKeys(key=keyattr,operator=operator,value=keyvalue,logicalType="string")
+argKeys = ArgumentKeys(key=keyattr,operator=operator,value=keyvalue,logicalType=logicalType)
 argsArg = ArgumentsArg([argKeys])
 queryKeys = QueryKeys(entities=entity,useTextSearch=textSearch, arguments=argsArg)
 query = Query(query=[queryKeys])
