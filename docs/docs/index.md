@@ -46,25 +46,17 @@ __It is valid for the followig endpoints:__
 
 You will also want to change the following values so that your payload is valid when requesting a document from IDM.
 
-__This is the document type in IDM__
-
 `entity = "Purchase_Order" `         
-
-__This is the attribute name__
 
 `keyattr = "Order_Number" `          
 
-__This is the comparison operator__
-
 `operator = "="  `                   
-
-__This variable sets the textSearch value to True or False__
 
 `textSearch = False   `              
 
  __You can create another function in the DataInput class or reuse the existing function and change the search node__
 
-`keyvalue = inputdata.getPO() `      
+`DataInput.getPO() `      
 
 __Optional__
 

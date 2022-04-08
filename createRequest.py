@@ -8,37 +8,25 @@
 import xml.etree.ElementTree as ET
 import json
 from typing import List
-import io
 
 class DataInput:
-    @staticmethod
-    def getPO():
+    def __init__(self):
+        self.entity = "Purchase_Order"
+        self.keyattr = "Purchase_Order_Number"
+        self.operator = "="
+        self.textSearch = False
+        self.logicalType = ""
+
+    def getPO(self):
         with open("Sync.PurchaseOrder.xml") as INPUT:
             root = ET.parse(INPUT)
-            # Set the default namespace object
             ns = {'xs': 'http://schema.infor.com/InforOAGIS/2'}
-            # Purchase Order Number# is a static value and will be added to each line item under the poNo column
             poNo = root.find(".//xs:DataArea/xs:PurchaseOrder/xs:PurchaseOrderHeader/xs:DocumentID/xs:ID", ns)
             if poNo is not None:
                 pono = poNo.text[:-3] 
             else:
                 pono = poNo.text
-            return pono     
-
-''' IDM entity or Document Type '''
-entity = "Invoice"
-''' Attribute or Property '''
-keyattr = "Purchase_Order_Number"
-''' Operator like = > < etc. '''
-operator = "="
-''' Set boolean value'''
-textSearch = False
-''' Set Purchase Order Number '''
-inputdata = DataInput()
-keyvalue = inputdata.getPO()
-''' Set logicalType '''
-logicalType = ""
-
+        return pono     
 
 class Query(object):
     def __init__(self, query: str):
@@ -65,14 +53,18 @@ class ArgumentsArg(object):
     def __init__(self, argument: List[ArgumentKeys]):
         self.argument = argument               
 
+class Request:
+    def payload():
+        params = DataInput()
+        argKeys = ArgumentKeys(key=params.keyattr,operator=params.operator,value=params.getPO(),logicalType=params.logicalType)
+        argsArg = ArgumentsArg([argKeys])
+        queryKeys = QueryKeys(entities=params.entity,useTextSearch=params.textSearch, arguments=argsArg)
+        query = Query(query=[queryKeys])
+        result = Queries(queries=query)
+        return result
 
-argKeys = ArgumentKeys(key=keyattr,operator=operator,value=keyvalue,logicalType=logicalType)
-argsArg = ArgumentsArg([argKeys])
-queryKeys = QueryKeys(entities=entity,useTextSearch=textSearch, arguments=argsArg)
-query = Query(query=[queryKeys])
-result = Queries(queries=query)
+def getIDMItem(result: str):
+    result = json.dumps(result, default=lambda o: o.__dict__, indent=4)
+    print(result)
 
-json_result = json.dumps(result, default=lambda o: o.__dict__, indent=4)
-
-print(json_result)
-
+getIDMItem(Request.payload())
