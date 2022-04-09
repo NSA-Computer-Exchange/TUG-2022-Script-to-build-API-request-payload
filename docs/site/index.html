@@ -450,16 +450,12 @@ This script is a sample script that reads a <strong>Sync.PurchaseOrder</strong> 
 * /items/search/item/resource/{conversion}/stream
 </code></pre>
 <p>You will also want to change the following values so that your payload is valid when requesting a document from IDM.</p>
-<p><strong>This is the document type in IDM</strong></p>
 <p><code>entity = "Purchase_Order"</code>         </p>
-<p><strong>This is the attribute name</strong></p>
 <p><code>keyattr = "Order_Number"</code>          </p>
-<p><strong>This is the comparison operator</strong></p>
 <p><code>operator = "="</code>                   </p>
-<p><strong>This variable sets the textSearch value to True or False</strong></p>
 <p><code>textSearch = False</code>              </p>
 <p><strong>You can create another function in the DataInput class or reuse the existing function and change the search node</strong></p>
-<p><code>keyvalue = inputdata.getPO()</code>      </p>
+<p><code>DataInput.getPO()</code>      </p>
 <p><strong>Optional</strong></p>
 <p><code>logicalType = ""</code>                  </p>
 <p>After you are done editing the script you can run it as usual to get the json output payload:</p>
